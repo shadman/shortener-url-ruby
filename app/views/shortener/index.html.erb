@@ -1,0 +1,11 @@
+<div class="row">
+	
+	<%= form_tag({controller: "shortener", action: "generate"}, method: "post") do %>
+
+	<%= text_field_tag(:url, '', placeholder: "http://example.com", class: "url-box", id: "url-box" ) %> <br/>
+
+	<%= submit_tag("Generate Short URL", class: "generate-button") %>
+
+	<% end %>
+
+</div>

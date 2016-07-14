@@ -4,11 +4,21 @@ ruby '2.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
+
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3', '~> 1.3.11'
-#gem 'mongo', '~> 2.2.5'
 gem 'mysql2'
 gem 'activerecord-mysql-adapter'
+
+# Use mongo
+##gem 'mongo', '~> 2.2.5'
+#gem 'mongoid', git: 'https://github.com/mongodb/mongoid'
+#gem 'bson_ext'
+##gem 'mongo'
+#gem 'mongodb_adapter'
+#gem 'dm-core'
+##gem 'uuidtools'
+##gem 'dm-mongo-adapter'
+#gem "data_mapper"
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

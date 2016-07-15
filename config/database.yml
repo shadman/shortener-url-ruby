@@ -34,6 +34,7 @@ test:
 
 production:
   <<: *default
+  adapter: mysql2
   host: bigbasket.pk
   username: bigbaske_shortui
   database: bigbaske_test

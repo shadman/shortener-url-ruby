@@ -21,3 +21,7 @@
 
 en:
   hello: "Hello world"
+
+  invalid: "Please enter a valid short URL."
+  invalid_url: "Please enter a valid URL."
+  invalid_request: "Sorry, Invalid error found."

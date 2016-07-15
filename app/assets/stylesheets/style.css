@@ -18,6 +18,7 @@ body {
 	font-size: 20px;
 	margin-top: 20px;
 }
+
 .message-area {
 	background-color: #66ffcc;
 	border:1px dashed #009999;
@@ -26,3 +27,13 @@ body {
 	margin-top: 40px;
 	width: 50%;
 }
+
+.message-area-error {
+	background-color: rgb(255, 129, 131);
+	border:1px dashed #009999;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 50%;
+}
+

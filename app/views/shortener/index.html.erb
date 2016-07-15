@@ -1,11 +1,20 @@
 <div class="row">
 	
-	<%= form_tag({controller: "shortener", action: "generate"}, method: "post") do %>
+	<%= form_tag({controller: "shortener", action: "generate"}, method: "post", class: "url-form") do %>
 
-	<%= text_field_tag(:url, '', placeholder: "http://example.com", class: "url-box", id: "url-box" ) %> <br/>
+		<%= text_field_tag(:url, '', placeholder: "http://example.com", class: "url-box", id: "url-box" ) %> <br/>
 
-	<%= submit_tag("Generate Short URL", class: "generate-button") %>
+		<%= submit_tag("Generate Short URL", class: "generate-button") %>
 
 	<% end %>
+
+	
+	<div id="message-area" <% if @msg.present? || @url.present? %> class="message-area" <% end %> >
+		<%= @msg %>
+		<% if @url.present? %>
+			<a href="<%= @url %>" target="_blank"><%= @url %></a>
+		<% end %>
+	</div>
+	
 
 </div>

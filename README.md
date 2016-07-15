@@ -1,50 +1,35 @@
 # Shortener URL in Ruby on Rails
 
-update database configuration
-
-gem install bundler
-
-bundle install
-
-
-rake db:migrate
-
-
-
-
-
-
-# Resume JSON Parse with Ruby on Rails
-
 ## Live URL:
-https://resume-json-parse-ruby.herokuapp.com/
-
+https://shortener-url-ruby.herokuapp.com/
 
 ## Specifications:
 - Developed in Ruby 2.2 with Rails.
-- Paste your Resume JSON as input in required format, then press 'Generate Resume' button to get display results.
-- Have placed a sample Resume JSON in main page right after input area (fore demo).
-- Have added a 'Copy Sample Resume' button, by that we can easily copy our sample Resume JSON to paste on input area.
-- Tested with Firefox and Chrome.
+- Had a plan to use MongoDB for large number of traffic (getting some exceptions and dont have that much time to resolve).
+- You can create a short URL of any long URL.
+- Every short url will be unique.
+- High performance can support morethan 500 million users (with mongoDB).
+- Using Free MySQL (as getting exception with mongoDB in Rails)
+- Added URL rewriting for shortest URL on server to experince a live taste.
+- Tracking number of hits for every short URL
+- Storing creation date time as well
+- Can easily integrate short dedicated domain name for url
 
 ## Deployment Steps:
 - Create a directory for your Ruby Projects
 - Need to clone/copy all code from repository on your Ruby project directory.
-- Update database configurations
+- Update database configurations ( 'config/database.yml' )
 - Install RVM and Ruby by given commands below (if needed; otherwise install only gems. steps defined in 'Ruby setup with RVM')
 - Run Migrations (Stps defined in 'Run Rake Migration')
 - Run with puma server. (Steps defined in 'Run Project via Puma')
 - After successful deployment and server run, you may access via http://localhost:3000.
 - Cheers.
 
-## Sample JSON:
-- Sample json file is here 'app/views/resume/_sample.json.erb' (please don't delete or edit).
-
-## Same application also developed in AngularJS here:
+## Previously developed in PHP and Mongo for this assignment here:
 ###LIVE: 
-https://resume-json-parser.herokuapp.com/
+https://shortener-url-app.herokuapp.com
 ###GIT REPO: 
-https://github.com/shadman/resume-json-parser-angular
+https://github.com/shadman/url-shortener-mongo-php
 
 --------------
 

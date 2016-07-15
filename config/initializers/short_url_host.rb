@@ -1,1 +1,1 @@
-SHORT_HOST = "http://localhost:3000/"
+SHORT_HOST = "https://shortener-url-ruby.herokuapp.com/"

@@ -12,7 +12,7 @@
 	<div id="message-area" <% if @msg.present? || @url.present? %> class="message-area" <% end %> >
 		<%= @msg %>
 		<% if @url.present? %>
-			<a href="<%= @url %>" target="_blank"><%= @url %></a>
+			Your shortener URL: <a href="<%= @url %>" target="_blank"><%= @url %></a>
 		<% end %>
 	</div>
 	

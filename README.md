@@ -16,9 +16,9 @@ https://shortener-url-ruby.herokuapp.com/
 - Can easily integrate short dedicated domain name for url
 
 ## Deployment Steps:
-- Create a directory for your Ruby Projects
-- Need to clone/copy all code from repository on your Ruby project directory.
-- Update database configurations ( 'config/database.yml' )
+- Create a directory for your Ruby Projects.
+- Need to clone/copy all code from repository on your created Ruby project directory.
+- Update database configurations ( 'config/database.yml' ).
 - Install RVM and Ruby by given commands below (if needed; otherwise install only gems. steps defined in 'Ruby setup with RVM')
 - Run Migrations (Stps defined in 'Run Rake Migration')
 - Run with puma server. (Steps defined in 'Run Project via Puma')
@@ -51,11 +51,11 @@ https://github.com/shadman/url-shortener-mongo-php
 ## Installing stable Ruby 2.2 via RVM
 
 	curl -sSL https://get.rvm.io | bash -s stable --ruby
-	rvm install 2.2
+	rvm install ruby-2.2
 
 ## Using installed Ruby version and setting it as default
 
-	rvm use 2.2 --default
+	rvm use ruby-2.2 --default
 
 ## Show you a list of installed Ruby versions
 
@@ -77,3 +77,6 @@ https://github.com/shadman/url-shortener-mongo-php
 # Run Project via Puma
 
 	rails s
+
+
+Cheers !
